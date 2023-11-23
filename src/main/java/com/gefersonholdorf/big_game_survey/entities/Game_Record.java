@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "tb_record")
-public class Record {
+public class Game_Record {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

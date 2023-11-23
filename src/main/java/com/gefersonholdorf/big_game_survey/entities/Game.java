@@ -3,8 +3,7 @@ package com.gefersonholdorf.big_game_survey.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.gefersonholdorf.big_game_survey.enums.Platform;
-
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -19,6 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Entity
 @Table(name = "tb_game")
 public class Game {
 
@@ -33,5 +33,5 @@ public class Game {
     private Genre genre;
     
     @OneToMany (mappedBy = "game")
-    private List<Record> records = new ArrayList<>();
+    private List<Game_Record> records = new ArrayList<>();
 }
