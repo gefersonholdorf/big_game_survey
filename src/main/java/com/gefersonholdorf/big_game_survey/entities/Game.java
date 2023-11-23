@@ -1,8 +1,16 @@
 package com.gefersonholdorf.big_game_survey.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.gefersonholdorf.big_game_survey.enums.Platform;
+
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,5 +27,11 @@ public class Game {
     private Long id;
     private String title;
     private Platform platform;
+
+    @ManyToOne 
+    @JoinColumn (name = "genre_id")
+    private Genre genre;
     
+    @OneToMany (mappedBy = "game")
+    private List<Record> records = new ArrayList<>();
 }
