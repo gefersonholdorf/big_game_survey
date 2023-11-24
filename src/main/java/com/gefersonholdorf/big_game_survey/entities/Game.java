@@ -3,6 +3,8 @@ package com.gefersonholdorf.big_game_survey.entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.gefersonholdorf.big_game_survey.enums.Platform;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
