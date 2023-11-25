@@ -17,7 +17,6 @@ INSERT INTO tb_game (title, platform, genre_id) VALUES ('Fall Guys', 1, 4);
 INSERT INTO tb_game (title, platform, genre_id) VALUES ('Fortnite', 0, 4);
 INSERT INTO tb_game (title, platform, genre_id) VALUES ('Dragon Age Inquisition', 2, 3);
 INSERT INTO tb_game (title, platform, genre_id) VALUES ('Dragon Age Inquisition', 1, 3);
-
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (3, 'Tulio', 44, TIMESTAMP WITH TIME ZONE '2020-07-21T20:59:19Z');
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (11, 'Alex', 33, TIMESTAMP WITH TIME ZONE '2020-06-20T20:30:26Z');
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (11, 'Marcos', 45, TIMESTAMP WITH TIME ZONE '2020-06-15T15:01:37Z');
@@ -218,3 +217,4 @@ INSERT INTO tb_record (game_id, name, age, moment) VALUES (3, 'Tulio', 27, TIMES
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (12, 'Alex', 27, TIMESTAMP WITH TIME ZONE '2020-06-14T21:05:20Z');
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (1, 'Aline', 24, TIMESTAMP WITH TIME ZONE '2020-05-06T21:06:39Z');
 INSERT INTO tb_record (game_id, name, age, moment) VALUES (3, 'Erico', 36, TIMESTAMP WITH TIME ZONE '2020-06-01T14:24:21Z');
+
